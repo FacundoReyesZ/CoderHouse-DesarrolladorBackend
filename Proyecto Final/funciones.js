@@ -11,7 +11,4 @@ class Atleta{
         this.rmCleanAndJerk=rmCleanAndJerk;
         this.rmClean=rmClean;
     }
-
-
-    
 }
