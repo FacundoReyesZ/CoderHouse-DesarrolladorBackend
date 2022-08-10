@@ -15,16 +15,20 @@ if(ingresarMarca===true){
     let movimiento=prompt(`¿Cual es el movimiento?`)
     let nuevaMarca=prompt(`Porfavor indica el peso en kilogramos de la nueva marca`)
     if(movimiento=="snatch"){
-        snatch.push({nombre:nombreAtleta,marca:nuevaMarca})
+        snatch.push({nombre:nombreAtleta,marca:nuevaMarca});
+        console.table(snatch);
     }
     if(movimiento=="cleanAndJerk"){
-        cleanAndJerk.push({nombre:nombreAtleta,marca:nuevaMarca})
+        cleanAndJerk.push({nombre:nombreAtleta,marca:nuevaMarca});
+        console.table(cleanAndJerk);
     }
     if(movimiento=="clean"){
-        clean.push({nombre:nombreAtleta,marca:nuevaMarca})
+        clean.push({nombre:nombreAtleta,marca:nuevaMarca});
+        console.table(clean);
     }
-    
 }
- console.table(snatch)
+
+
+
 
 
