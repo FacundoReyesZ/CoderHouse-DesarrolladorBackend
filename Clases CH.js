@@ -25,3 +25,26 @@ CLASE 3
  CLASE 6 ARRAYS JS
  
  */
+
+/* 
+CLASE 8 DOM (DOCUMENTAL OBJECT MODEL -- EL MODELO DE OBJETOS DEL DOCUMENTO)
+
+TEORIA:
+En el Modelo de Objetos del Documento (DOM), cada etiqueta HTML es un objeto, al que podemos llamar NODO
+
+Ejemplo:
+
+Tag h1 => es un nodo elemento(<h1></h1>) y un nodo texto ("titulo del h1")
+
+----------
+Existen distintos métodos para acceder a los elementos del DOM empleando en la clase Document. 
+Los más comunes son:
+
+getElementById()
+getElementsByClassName()
+getElementsByTagName()
+
+const titulo = document.getElementById("titulo")
+
+titulo.innerText "Devuelve en consola lo que esta escrito dentro del id titulo por ejemplo"
+*/
