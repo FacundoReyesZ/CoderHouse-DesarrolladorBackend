@@ -1,3 +1,4 @@
+
 function porcentajes(rm){
     for(let i=1;i<10;i++){
         console.log(`Este es tu ${i*10}%:`,Math.round( rm * (0.10*i)))
