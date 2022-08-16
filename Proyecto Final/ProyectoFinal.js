@@ -13,10 +13,9 @@ if(primerRegistro===true){
 }
 
 
-function cambiarEncabezado(){
+
     bienvenida.innerText = `Hola ${nombreAtleta} ,Bienvenido a tu app para atletas`
-}
-cambiarEncabezado()
+
 
 
 

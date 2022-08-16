@@ -7,14 +7,18 @@
 }
 
 body{
-    background:url(../../fondoAppCrossfit/fondo\ azul\ barra\ negra.jpg)  ;
+    background-image:url(Assets/grandeight.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* background-position: center; */
     font-family: 'M PLUS 1 Code', sans-serif;
     font-family: 'Poppins', sans-serif;
 }
 
-.nav{
-    /* width: 300px; */
-}
+/* .nav{
+ width: 300px;
+} 
+*/
 
 .nav__link{
     color: #303440;
