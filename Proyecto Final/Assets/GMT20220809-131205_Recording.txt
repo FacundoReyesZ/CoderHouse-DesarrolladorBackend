@@ -1,0 +1,370 @@
+04:00:44	Guido Granzella:	que nervios
+04:01:53	[Tutor] Emiliano Del Arco:	lo importante es prestar atención a los paso a paso, y como se trabaja con DOM
+04:03:17	[Tutor]Javier Garcia:	hoy finalmente vamos a aprender a interactuar con html a través de código JavaScript
+04:03:47	[TUTOR] Luis Gonzalez:	DOM es una representacion de su HTML, en JS
+04:03:54	[TUTOR] Luis Gonzalez:	asi de simple
+04:04:16	Emiliano Di Noto:	nosotros deberíamos descargar ese HTML que esta usando el profe para esta clase? o no es necesario?
+04:05:10	[Tutor] Jonathan Romero:	Les recomendamos seguir la clase con la explicación, luego tendrán la grabación para practicar paso a paso
+04:06:01	[Tutor] Emiliano Del Arco:	pdf Arbol DOM
+04:06:13	Rodrigo Morte Cuevas:	larga vida a bootstrap
+04:08:20	[TUTORA] Paula Artusso:	Buen día! Disculpen la demora, hubo un tormentón acá y se cortó la loooz
+04:08:39	[Tutor] German Cuevas:	🤣
+04:09:46	Kevin Spigel:	para indendar esta bueno usar option+shift+f (iOS) 😄
+04:10:22	[Tutor] Nicolás Krein Werle:	Lo pueden encontrar al hacer click secundario también
+04:10:34	[Tutor] Nicolás Krein Werle:	Exacto, ahí.
+04:10:39	Alessandro Pimentel:	El prettier tambien funciona no?
+04:11:06	Luciano Pina:	el prettier no es para los colores nomas?
+04:11:24	[Tutor] Emiliano Del Arco:	atajos VScode
+04:11:33	Alessandro Pimentel:	EmiPidia.com
+04:11:35	Guido Granzella:	grande emi siempre
+04:11:41	Luciano Pina:	uff buenisimo emi gracias
+04:11:42	[TUTORA] Paula Artusso:	Si, el prettier también sirve para identar
+04:11:57	Nicolas Dacci:	que genio!!! como mecanico agradecido!!!
+04:12:35	Nicolas Dacci:	👍
+04:12:45	nicolas viale:	😱
+04:14:14	[TUTORA] Paula Artusso:	Acá empieza la magia
+04:14:38	Rodrigo Morte Cuevas:	arranca por la derecha el genio del futbol mundial
+04:16:00	Luciano Pina:	osea document.footer te selecciona solo la ultima parte no?
+04:16:19	[TUTOR] Luis Gonzalez:	te selecciona el footer
+04:16:29	[TUTOR] Luis Gonzalez:	pero en realidad seria
+04:16:54	[TUTOR] Luis Gonzalez:	no seria*
+04:16:57	[TUTOR] Luis Gonzalez:	document.footer
+04:17:17	[TUTOR] Luis Gonzalez:	el footer esta dentro del body
+04:17:50	[Tutor] Emiliano Del Arco:	todos los atajos de vsCode detalladas todas todas
+04:18:33	Leandro Lotfi:	Gracias Emi
+04:19:03	Carla Méndez:	Gracias Emii!
+04:19:18	Rodrigo Morte Cuevas:	que es el text 7 y 8?
+04:19:22	[Tutor] Emiliano Del Arco:	<p> (padre)<strong></strong>(hijo)</p>
+04:19:23	Rodrigo Morte Cuevas:	por que 7 y 8?
+04:19:36	[Tutor] Emiliano Del Arco:	marca las etiquetas de texto
+04:19:46	[Tutor] Emiliano Del Arco:	las cuenta, o enumera
+04:19:53	Rodrigo Morte Cuevas:	pero por que en ese ejemplo era 7 y 8?
+04:21:26	[Tutor] Emiliano Del Arco:	Text – la clase correspondiente a texto dentro de los elementos, por ejemplo Hello en <p>Hello</p>.
+04:22:11	[Tutor] Emiliano Del Arco:	en el ejemplo habría tenido mas etiquetas antes por eso los textos fueron 7 y 8.. lo podes ver mejor si tenes un árbol DOM
+04:22:36	[Tutor] German Cuevas:	Claro, los va enumerando
+04:22:55	[Tutor] Emiliano Del Arco:	podes usar esta extensiónhttp://software.hixie.ch/utilities/js/live-dom-viewer/
+04:23:00	[Tutor] Emiliano Del Arco:	para verlo mejor
+04:24:56	[Tutor] Emiliano Del Arco:	pdf de acceso a los Nodos (etiquetas)
+04:27:07	[Tutor] Emiliano Del Arco:	dudas?
+04:27:10	[Tutor] Emiliano Del Arco:	consultas?
+04:27:25	Guido Granzella:	por ahora todo ok
+04:28:53	[Tutor]Javier Garcia:	si van surgiendo dudas pregunten
+04:29:02	[Tutor] Emiliano Del Arco:	no esta de mas aclarar que los ID son únicos e irrepetibles!
+04:29:24	Raquel Sangenís:	h1 no es que solo puede haber 1 solo?
+04:29:32	[Tutor]Javier Garcia:	atención para los que referenciaron el archivo JavaScript al principio, usar el defer
+04:29:47	[Tutor] Emiliano Del Arco:	Raquel si
+04:29:54	[Tutor] Emiliano Del Arco:	pero estamos ejemplificando
+04:29:56	Raquel Sangenís:	ah ok
+04:30:00	Raquel Sangenís:	bien bien
+04:30:07	Tomás Moyano:	se puede, no se debe.
+04:30:08	[Tutor] Emiliano Del Arco:	no nos retes...
+04:30:16	Raquel Sangenís:	jajj :)
+04:30:40	[Tutor] Emiliano Del Arco:	te doy una estrella para que no te enojes🌠
+04:30:46	Andrés Chiassoni:	que pasa si tenemos mas de una pagina html? recorre todas las paginas? o solo el index.htnl?
+04:30:55	Raquel Sangenís:	jajaja :))
+04:30:58	[TUTOR] Luis Gonzalez:	donde tengas linkeado el script andres
+04:31:15	Andrés Chiassoni:	ha perfecto, gracias
+04:31:17	[Tutor] Emiliano Del Arco:	cada HTML puede tener su script andres
+04:31:24	[Tutor]Javier Garcia:	el archivo JavaScript lo conectas con los html que quieras
+04:31:46	Andrés Chiassoni:	ya lo entendi buenisimo gracias
+04:32:07	[Tutor] Emiliano Del Arco:	para que puedas buscar por separado, por que si usas un getElement que busca a un nodo en el index pero es el mismo script que en productos.html, te va a dar error por que ese nodo no lo encuentra
+04:34:20	[Tutor] Emiliano Del Arco:	link de milligramhttps://milligram.io/
+04:35:54	Rodrigo Lezama:	por eso dicen algunos que hay que ponerlo al final el script?
+04:36:09	[Tutor] Nicolás Krein Werle:	Claro Rodri
+04:36:10	[Tutor] Emiliano Del Arco:	Exacto Rodrigo
+04:36:20	Emiliano Di Noto:	ahh ahí va
+04:36:38	[Tutor] Emiliano Del Arco:	existe atributos para dejar el script en head
+04:36:40	Alessandro Pimentel:	todos los js debemos darle el defer?
+04:36:41	Raquel Sangenís:	defer
+04:36:45	Rodrigo Lezama:	genial
+04:36:57	Guido Granzella:	excelente
+04:37:03	Julian Rinaudo:	Si se lo pone a antes de cerrar body tamb vale o no?
+04:37:12	[Tutor] Emiliano Del Arco:	pdf Async - defer
+04:37:17	[Tutor] Emiliano Del Arco:	si julian
+04:37:53	Julian Rinaudo:	Perfecto profe!!
+04:38:04	Gregorio Ibañez:	eso es Bootstrap
+04:38:18	Rodrigo Abaz:	Clarisimo
+04:38:39	Raquel Sangenís:	genial profe
+04:41:16	[Tutor] Emiliano Del Arco:	para acordarse del atributo, recuerden quien fue le profe que se los explico<el atributo 'de fer'> como se llama el profe..
+04:41:33	Julian Rinaudo:	es buena ajaja
+04:41:37	Guido Granzella:	xD
+04:41:37	[Tutor] Nicolás Krein Werle:	😂 La memo tecnia
+04:41:44	Sofia Caso:	🤣ajjaja
+04:41:45	[Tutor] Jonathan Romero:	jajaja
+04:41:55	Rodrigo Abaz:	xDD
+04:42:22	[Tutor] Jonathan Romero:	Esto es como en css " # " --> id  " . " --> class
+04:43:23	[Tutor] Nicolás Krein Werle:	Lo que dice Jonathan es para el querySelector, que ya lo vemos también
+04:44:22	Luciano Pina:	Y si pones getElementsByClassName("button") salta error o te llama a los 4 botones?
+04:44:50	[Tutor] Emiliano Del Arco:	un htmlCollection es un tipo de array
+04:45:03	[Tutor] Emiliano Del Arco:	pero no se puede usar los métodos de array en el
+04:45:13	[Tutor] Emiliano Del Arco:	solo se recorre con for of
+04:45:16	[TUTOR] Luis Gonzalez:	muy importante👆
+04:46:13	Luciano Pina:	genial gracias
+04:46:22	Tomás Moyano:	o sea, si es getElemetsByClass es como un array
+04:46:32	[Tutor] Nicolás Krein Werle:	Así es.
+04:46:33	[Tutor] German Cuevas:	Si, parecido
+04:46:42	Tomás Moyano:	excelnt
+04:46:53	[TUTOR] Luis Gonzalez:	muy importante, es parecido a un array, pero no es un array puntualmente
+04:47:06	Raquel Sangenís:	si hay una clase sola?
+04:47:15	[TUTOR] Luis Gonzalez:	hacemos enfasis porque suele ser un problema porque intentan usar metodos de arrays con ellos y no les funcionan
+04:47:29	[Tutor] Nicolás Krein Werle:	Devuelve un array con un solo elemento Raquel
+04:47:41	[Tutor] Emiliano Del Arco:	si hay una clase tendrá un solo elemento
+04:47:46	Raquel Sangenís:	ah sigue siendo array
+04:47:47	Raquel Sangenís:	oki
+04:47:51	[Tutor] Nicolás Krein Werle:	Importante lo que dice Luis También
+04:48:00	[Tutor] Nicolás Krein Werle:	Para tener en cuenta
+04:48:12	[Tutor] Emiliano Del Arco:	la idea que si solo va a ser uno solo pero no usaras esa clase para otra cosa.. es mejor usar un id directamente
+04:48:22	Raquel Sangenís:	claro
+04:48:26	Raquel Sangenís:	#
+04:49:04	Raquel Sangenís:	🌠
+04:49:35	[Tutor] Emiliano Del Arco:	no no Raquel.. no se puede auto asignar estrellas.. }
+04:49:43	Raquel Sangenís:	jajajaj
+04:49:52	[Tutor] Emiliano Del Arco:	5 puntos menos para gryffindor
+04:50:01	Fer Luna:	function textoDeBotones() {
+    for (button of buttons) {
+        console.log(button.innerText)
+    }
+}
+04:50:01	Rodrigo Abaz:	foreach tambien agarra no?
+04:50:13	Rodrigo Abaz:	demas
+04:50:33	[TUTOR] Luis Gonzalez:	si, pero por ejemplo, map, filter, etc, no funcionan
+04:50:36	[TUTOR] Luis Gonzalez:	ojo con eso chicos
+04:50:46	[Tutor] German Cuevas:	xd
+04:51:42	[Tutor] German Cuevas:	muy bien
+04:51:44	Guido Granzella:	profe muestra el código antes de irse porfa
+04:51:45	[Tutor] Emiliano Del Arco:	11:12 volvemos
+04:51:53	[Tutor] German Cuevas:	Presentes pasados !
+04:51:53	Guido Granzella:	tenkiu
+04:52:49	[Tutor] Emiliano Del Arco:	Mariano Andres Roman Buffa si estas me escribes por el chat te ganaste un iPhone!
+04:53:12	Guido Granzella:	termon
+04:53:15	Nicolas Dacci:	😱
+04:53:31	[Tutor] Fabian Romano:	Asistencia tomada todos presentes.
+04:53:34	[Tutor] Jonathan Romero:	Alejandro Nieva. Si estas ahí escribime por la plataforma. Los demás ya tienen presente👍
+04:53:43	[Tutor] Emiliano Del Arco:	lista de presentes publicada
+04:53:50	[Tutor]Javier Garcia:	Esto está bueno para que lean tras finalizar la clase: https://lenguajejs.com/javascript/dom/que-es/
+04:53:58	[Tutor] Fabian Romano:	Cualquier inconveniente con la asiten
+04:54:00	Raquel Sangenís:	ah pense que estaban regalando iPhones
+04:54:03	[Tutor] Fabian Romano:	me avisan
+04:54:12	Nicolas Tallone:	jajajaja
+04:54:20	[Tutor]Javier Garcia:	Ya les pasé el presente
+04:54:21	Raquel Sangenís:	ya te iba a escribir Fabian
+04:54:24	Raquel Sangenís:	jajaja
+04:54:26	[Tutor]Javier Garcia:	si no les llegó porfa avisenme
+04:54:41	[Tutor] Emiliano Del Arco:	jajaja
+04:54:55	[Tutor] Fabian Romano:	Donde me anoto para el iPhone?? jaja
+04:55:00	[Tutor] Emiliano Del Arco:	no no solo mis tutelados.. el resto hay Nokia 1100
+04:55:10	Raquel Sangenís:	es solo emiliano que esta regalon
+04:55:15	Nicolas Dacci:	jajaja
+04:55:34	Raquel Sangenís:	regalon?
+04:55:35	Raquel Sangenís:	jajaja
+04:57:38	[Tutor]Javier Garcia:	jajajja que genio
+04:58:01	Sofia Caso:	que decía el tuit jaajaj
+04:58:20	Guido Granzella:	ajajajajaj
+04:58:21	Gonzalo Esquivel:	jajajjaaja
+04:58:27	José Santiago Vázquez:	jajajaj
+04:58:31	Tomás Moyano:	profe, usted dijo q daba un curso de JS avanzado.. puede decir dónde?
+04:58:36	Raquel Sangenís:	jajjaja
+04:58:52	Tomás Moyano:	okkkkk
+04:58:55	Alessandro Pimentel:	en udemy seria?
+04:59:00	[Tutor] Emiliano Del Arco:	no no
+04:59:10	Alessandro Pimentel:	Ahh bien, soy de uruguay
+04:59:12	Sebastian Sonenblum:	Sera la utn?
+04:59:50	[Tutor] Emiliano Del Arco:	vamos a prestar atención a esta parte, ya que el desafio se relaciona a esto..
+05:01:22	Patricio Albornoz:	interesanteee
+05:01:58	Guido Granzella:	esaaaaa
+05:02:22	Julian Rinaudo:	Profe perdón, para que era el innerText?
+05:02:35	Alessandro Pimentel:	ver el texto interno
+05:02:45	[Tutor] German Cuevas:	Es para acceder o agregar texto a un nodo Juli
+05:02:54	Julian Rinaudo:	Ahhh perfecto! gracias!!
+05:02:58	[Tutor]Javier Garcia:	para ambos, acceder o crear texto Juli
+05:03:39	[Tutor] Emiliano Del Arco:	importante que innerText es para agregar solo texto
+05:04:06	[Tutor] Emiliano Del Arco:	innerHtml nos permite aparte de agregar texto, sino también etiquetas..
+05:04:33	[Tutor] Emiliano Del Arco:	si agrego etiquetas con innerText no la va a interpretar como etiquetas sino como texto
+05:05:48	[Tutor]Javier Garcia:	Acá va lo que explicaba :) https://www.w3schools.com/jsref/prop_node_innertext.asp
+05:08:41	Hernan Israel:	como como
+05:08:46	Hernan Israel:	como fue esta ultima parte?
+05:08:50	Hernan Israel:	para crear automaticamente
+05:09:13	Hernan Israel:	ahh claro
+05:09:21	Nicolas Dacci:	omo determinamos si crear algo en el hatml o desde js
+05:09:32	Matias Brandan:	es recomendable usar mucho el innerHTML?? o es mas para algo en especifico?
+05:09:35	Hernan Israel:	es major en el html o major en el JS
+05:09:42	Hernan Israel:	*mejor
+05:09:43	[Tutor] Emiliano Del Arco:	en que podes recorrer un array seria dinamico..
+05:09:50	[TUTOR] Luis González:	sólo que va a cambiar a lo largo del uso de la aplicacion nico
+05:10:06	Nicolas Dacci:	a.. ok luis
+05:10:08	[TUTOR] Luis González:	no es que ahora van a hacer todo su html desde js, no
+05:10:18	[TUTOR] Luis González:	sólo lo que necesiten crear dinámicamente
+05:10:20	[Tutor] Emiliano Del Arco:	a medida que recorres las vas imprimiendo en pantalla
+05:10:22	Nicolas Dacci:	claro, entiendo javi
+05:10:25	[Tutor] Emiliano Del Arco:	pero lo vemos
+05:10:31	[TUTOR] Luis González:	por ejemplo los 600 productos de una base de datos
+05:10:33	Matias Brandan:	ah!!! buenísimo!!
+05:10:50	nicolas viale:	me encato!!
+05:11:05	Guido Granzella:	asi es como ponen las publicaciones en mercado libre por ejemplo?
+05:11:22	[Tutor] Emiliano Del Arco:	claro guido
+05:12:01	[Tutor] Emiliano Del Arco:	todos los datos..
+05:12:12	Hernan Israel:	en cuanto a performance eso no hace que la pagina necesite MUCHOS recursos para corer agilmente?
+05:12:15	Guido Granzella:	genial muchas gracias!!
+05:12:19	Matias Brandan:	jajajjajaajja me exploto la cabeza con eso
+05:12:36	[TUTOR] Luis González:	qué cosa Hernán?
+05:12:38	Alessandro Pimentel:	asi se crean los ecommerce y eso
+05:13:14	Hernan Israel:	nada nada, no viene al caso
+05:13:22	[Tutor] German Cuevas:	🐭
+05:13:45	Gonzalo Esquivel:	profe el !important es para que pase por alto cualquier eventualidad y cumpla con lo que queremos poner no?
+05:14:18	[TUTOR] Luis González:	algo así gonza
+05:14:24	[TUTOR] Luis González:	aunque ojo con su uso
+05:14:37	[TUTOR] Luis González:	mantenganlo en lo mínimo
+05:15:00	Gonzalo Esquivel:	claro , seria solo para casos especiales
+05:15:03	[Tutor] Emiliano Del Arco:	Gonzalo el !important.. obliga a que tenga ese estilo..
+05:15:04	Gonzalo Esquivel:	como para salir del paso quizas
+05:15:28	Gonzalo Esquivel:	porque vi que ese !important también se usa en otras funciones de css
+05:15:34	[Tutor] Emiliano Del Arco:	se usa mas cuando usas librerias y te obliga a tener un estilo, bueno usas el important para que tome el tu estilo y no por default
+05:15:43	Gonzalo Esquivel:	Ah bien bien
+05:15:51	Gonzalo Esquivel:	muchas gracias :)
+05:17:05	Emiliano Di Noto:	estaríamos llamando una clase de css para que se aplique en el dom mediante className
+05:17:12	Emiliano Di Noto:	algo asi
+05:17:35	Maria Francavilla:	las clases css deben estar creadas en el HTML, no son propias de css...o estoy errada ?
+05:18:06	[Tutor]Javier Garcia:	claro Maria
+05:18:06	[Tutor] Emiliano Del Arco:	Emi className agrega esas clases a los nodos.. que estas llamando o creando
+05:18:39	[Tutor]Javier Garcia:	en el HTML o en el JavaScript si creas una etiqueta le podés asignar una clase
+05:18:44	Hernan Israel:	tafirol
+05:18:49	Maria Francavilla:	si claro
+05:18:55	Maria Francavilla:	pero no directo en el css
+05:19:01	[Tutor]Javier Garcia:	nop
+05:19:05	Maria Francavilla:	ok
+05:19:22	[Tutor]Javier Garcia:	☺️
+05:23:38	Nicolas Dacci:	se corta el audio?
+05:23:43	[Tutor] Emiliano Del Arco:	no nico
+05:23:44	Raquel Sangenís:	no
+05:23:49	[Tutor] Emiliano Del Arco:	debe ser tu internet
+05:23:54	Nicolas Dacci:	es mi conexion
+05:23:57	[Tutor]Javier Garcia:	nop
+05:24:19	Sebastian Sonenblum:	por que no  va entre comillas ahí?
+05:24:56	[Tutor] Nicolás Krein Werle:	Sebas, es porque estamos usando el parámetro (que sabemos que es un string"
+05:25:06	[Tutor] Emiliano Del Arco:	por que recibe de esa manera el nodo a crear..
+05:25:59	Sebastian Sonenblum:	osea que cuado se usa createElement va sin comillas? Cuando es elementByID si?
+05:26:00	[Tutor] Emiliano Del Arco:	te dejo una documentaciónhttps://developer.mozilla.org/es/docs/Web/API/Document/createElement
+05:26:09	abril cortes:	appendChild seria lo mismo que append?
+05:26:17	[TUTOR] Luis Gonzalez:	no lo mismo
+05:26:19	[TUTOR] Luis Gonzalez:	parecido
+05:26:20	[Tutor] Emiliano Del Arco:	siempre es con comillas en createElement
+05:26:47	[Tutor] Emiliano Del Arco:	y cuando buscas a un nodo también será un string
+05:27:52	Guido Granzella:	genial esto!
+05:29:44	Guido Granzella:	como referencias una imagen ahio=
+05:29:48	szaja gold:	y se puede agregar algo para que quede guardado en el js? osea desde la pagina agregar esos dos países para que queden guardados en el array
+05:29:51	[Tutor] Emiliano Del Arco:	en un objeto
+05:30:08	[Tutor] Emiliano Del Arco:	escibis la ruta com si fuera que la vas a escribir en el src de la etiqueta img
+05:30:11	[Tutor] Emiliano Del Arco:	por ejemplo
+05:30:19	Guido Granzella:	grande emi gracias
+05:30:34	[Tutor] Emiliano Del Arco:	img:'../img/pepeGrillo.jpg'
+05:30:48	[TUTOR] Luis Gonzalez:	podriasszaja pero no seria persistente, o sea no se guardaria realmente en el codigo
+05:31:05	szaja gold:	y como se hace en el caso de los ecommerce?
+05:31:08	Guido Granzella:	gracaisss
+05:31:13	szaja gold:	para el tema de los productos
+05:31:13	Rodrigo Abaz:	lo pude guarar en memoria
+05:31:16	[TUTOR] Luis Gonzalez:	con una base de datos
+05:31:22	szaja gold:	aaahh genial
+05:31:37	[Tutor] German Cuevas:	Podes simular algo cuando veamos local storage, Szaja
+05:31:44	[Tutor] Emiliano Del Arco:	vamos a ver algo similar como dice german
+05:31:50	[Tutor] Emiliano Del Arco:	lo vemos en dos clases
+05:32:54	Gonzalo Damian Salgado:	hay algun metodo de display. por ejemplo como en CSS Display: None. Por si quiero mostrar un elemento solo cuando lo llame con una funcion
+05:33:07	Gonzalo Damian Salgado:	?
+05:33:17	[TUTOR] Luis Gonzalez:	podrias asigarnle una clase con display none, y listo
+05:33:53	[Tutor] Emiliano Del Arco:	si queres mostrar un solo elemento del array podes usar un find y evitas aplicar display none
+05:34:04	[Tutor] German Cuevas:	Si directamente lo queres borrar podrias usar un método llamado remove
+05:34:06	[Tutor] German Cuevas:	https://developer.mozilla.org/en-US/docs/Web/API/Element/remove
+05:34:07	[Tutor] Emiliano Del Arco:	lo que harias seria vaciar el contenedor
+05:34:29	[Tutor] Emiliano Del Arco:	y mostrar el elemento que queres mostrar como un buscador por ejemplo
+05:34:35	Rodrigo Abaz:	o con childe
+05:34:44	Rodrigo Abaz:	child XD
+05:37:25	Luciano Pina:	Profe, porque si en el array el id de cada producto es distinto en la tabla que se cargada todos tienen id 1234?
+05:37:46	Alessandro Pimentel:	Porque lo hizo estatico
+05:37:47	Luciano Pina:	ahh ya vi que en html estan escritas
+05:37:50	Alessandro Pimentel:	Hasta el momento
+05:37:50	Luciano Pina:	claro
+05:41:04	[Tutor] Emiliano Del Arco:	la idea es que lo hacemos en el HTML para aplicar los estilos de que lo que va hacer nuestro proyecto, tampoco tienen que crear 20 cards, con una sola pueden aplicar los estilos.. y luego que lo tienen ya definido.. lo comentan y lo llevan a js para que se encargue de crear todas o todo lo que sea desde se array..
+05:42:20	[Tutor] Jonathan Romero:	backticks = ` ` en mi teclado AtlGr + }
+05:42:31	[Tutor] Emiliano Del Arco:	alt + 96
+05:42:32	Hernan Israel:	click derecho format document
+05:43:14	Marcelo Ferré:	esos son punteros?
+05:43:41	[Tutor] Emiliano Del Arco:	texto ${variable} texto concatenacomo lo hacíamos antestexto + variable + texto
+05:44:07	José Santiago Vázquez:	como inserte las comillas invertidas en mac?
+05:44:23	Raquel Sangenís:	`
+05:44:26	[Tutor] Emiliano Del Arco:	'Hola ' + variable`Hola ${variable}`
+05:45:12	Nicolas Spinoso:	geniall
+05:45:19	[Tutor] Nicolás Krein Werle:	Importante acá, lo que está dentro de esas llaves, es JavaScript. Podemos usar variables, utilizar propiedades o métodos, siempre y cuando devuelva strings o number. No se pueden mostrar objetos ni arrays en el DOM!
+05:45:48	Guido Granzella:	una maravilla
+05:45:57	Hernan Israel:	el ID ahora si tomo uno distinto cada vez….
+05:45:58	Julian Rinaudo:	biutiful
+05:45:59	Emiliano Di Noto:	muy util
+05:46:00	Hernan Israel:	😵🔫tal como me habian dicho… Javascrip te vuela la cabeza
+05:46:15	[Tutor] German Cuevas:	Clase para repasar tranqui
+05:46:17	Nicolas Dacci:	a mi se me quemó la cabeza!!!!
+05:46:21	Emiliano Di Noto:	a revisar las clases después
+05:46:25	Patricio Albornoz:	no podes hacer un button que largue una función?
+05:46:30	Patricio Albornoz:	para ya terminar de hacerlo dinamico
+05:46:41	[Tutor]Juan Martin Haag:	Eso lo vemos la clase que viene!
+05:46:50	[Tutor] German Cuevas:	La próxima clase vemos eventos en profundidad
+05:46:57	Julian Rinaudo:	jujuu
+05:47:06	Guido Granzella:	ya esta, una locura esto
+05:47:38	Guido Granzella:	igual para escribir ese código que hizo el profe me tomo 24 horas jhajaj
+05:47:57	Gonzalo Esquivel:	xd
+05:47:57	Gonzalo Esquivel:	d
+05:48:11	[Tutor]Javier Garcia:	es opcional pero esta bueno para prscticar
+05:48:18	Nicolas Dacci:	pero este desafio es para este jueves?
+05:48:27	[Tutor] Jonathan Romero:	tienen 7 días
+05:48:28	Guido Granzella:	nono el martes quie viene
+05:48:30	Gonzalo Esquivel:	para el martes
+05:48:32	[TUTORA] Paula Artusso:	Siempre que puedan, hagan los desafios. Por el 10, pero sobre todo para practicar
+05:48:37	Nicolas Dacci:	aaa… jajaaj
+05:48:38	Raquel Sangenís:	tengo que hacer la preentrega todavia
+05:48:41	José Santiago Vázquez:	¿como inserto el backticks en mac?
+05:48:42	Emiliano Di Noto:	disculpe profe, en la carpeta de drive de las clases estaría este código de hoy?
+05:48:43	Raquel Sangenís:	jajj
+05:48:44	[Tutor]Javier Garcia:	7 días ttenes nico
+05:48:49	[TUTORA] Paula Artusso:	Tienen siempre una semana para las entregas
+05:48:51	[Tutor] Emiliano Del Arco:	bastick para mac es fn + }
+05:48:59	Nicolas Dacci:	ya me había asustado, jajaja
+05:48:59	José Santiago Vázquez:	gracias
+05:49:16	[Tutor] Emiliano Del Arco:	bastick para mac es fn + }
+05:49:27	[Tutor] Emiliano Del Arco:	no se quien pregunto eso pero ahí consegui esa info
+05:49:33	Gonzalo Esquivel:	XD
+05:49:34	[Tutor] German Cuevas:	xd
+05:49:41	Marcelo Ferré:	desde ayer que se me cae google sistematicamente
+05:50:42	[Tutor] Emiliano Del Arco:	diapositivas publicadas en el chat general
+05:51:21	Emiliano Di Noto:	genial, queda practicar mucho nomas
+05:51:44	Hernan Israel:	nada mas qeu un mic abierto
+05:51:46	[Tutor] German Cuevas:	Cualquier cosa nos hablan !
+05:51:54	Guido Granzella:	profe, alta clase muchas gracias!!! me voy retirando!
+05:51:59	Hebe Leiva:	gracias profe y tutores
+05:52:00	Emiliano Di Noto:	gracias profe y tutores por la ayuda
+05:52:05	[Tutor] Nicolás Krein Werle:	Estaremos atentos a consultas.
+05:52:12	Guido Granzella:	genios los tutores!
+05:52:15	Jean Mojica Pinzon:	Gracias Profe, como siempre muy buena la clase
+05:52:19	[Tutor]Juan Martin Haag:	Nos vemos gente!!
+05:52:21	[Tutor] Emiliano Del Arco:	gracias por asistir
+05:52:23	José Santiago Vázquez:	Gracias, hasta el jueves
+05:52:25	[Tutor] Nicolás Krein Werle:	Dejé unos links en el grupo también, saludos!
+05:52:25	[Tutor] Jonathan Romero:	Nos vemos el jueves gente!
+05:52:26	Julian Rinaudo:	Nos vemos !!!!!!!!!!!!!!!!!!!!!!
+05:52:26	[Tutor] Luka Liuzzi:	Nos vemos!!!
+05:52:30	[Tutor] Jonathan Romero:	Jueves eventos
+05:52:30	Matias Brandan:	nos vemos el jueves saludos!!!!
+05:52:31	Axel Langerman:	Genial saludos!
+05:52:31	Raquel Sangenís:	gracias a uds!
+05:52:31	[Tutor] Emiliano Del Arco:	receurden consultar por el chat mientras funcione
+05:52:32	Franco Basile:	Chau gracias!
+05:52:32	[Tutor] German Cuevas:	Cuídense ! PRACTIQUEN !!!!
+05:52:33	Enzo Sabatino:	nos vemos!
+05:52:34	[Tutor] Emiliano Del Arco:	receurden
+05:52:36	Nicolas Dacci:	gracias por la clase, tremendo todo lo que hay para repasar, saludos
+05:52:41	Raquel Sangenís:	genial
+05:52:44	[Tutor] Jonathan Romero:	Nos vemos!!
+05:52:47	[TUTORA] Paula Artusso:	Buen martes!
+05:52:50	Nicolas Spinoso:	nos vemos
+05:52:53	[Tutor] Fabian Romano:	Saludos nos vemos
+05:53:01	Leandro Lotfi:	Saludos
+05:53:01	[tutor]Maximiliano cardenas:	nos vemos chicos cualquier duda por plataforma recuerden. 
+05:53:03	[Tutor] Emiliano Del Arco:	nos vemos el jueves!!
+05:53:11	Marcelo Ferré:	muy reveladora la clase!
+05:53:13	Marcelo Ferré:	saludos!
