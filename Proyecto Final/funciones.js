@@ -1,6 +1,6 @@
 
 function porcentajes(rm){
-    for(let i=4;i<10;i++){
+    for(let i=4;i<10;i+=0.5){
         const lista=document.getElementById("lista")
         const li=document.createElement("li")
               li.innerText=`Este es tu ${i*10}%: ${Math.round( rm * (0.10*i))}`
