@@ -1,3 +1,7 @@
+function direccionar(){
+    let nombreAtleta = document.getElementById("nombreAtleta").value;
+        location.href="index.html"
+    }
 
 function porcentajes(rm){
     for(let i=4;i<10;i+=0.5){
@@ -48,17 +52,18 @@ function registroDeRm(){
         if(movimiento=="snatch"){
             snatch.push({nombre:nombreAtleta,marca:nuevaMarca});
             console.table(snatch);
-    }
+        }
         if(movimiento=="cleanAndJerk"){
             cleanAndJerk.push({nombre:nombreAtleta,marca:nuevaMarca});
             console.table(cleanAndJerk);
-    }
+        }
         if(movimiento=="clean"){
             clean.push({nombre:nombreAtleta,marca:nuevaMarca});
             console.table(clean);
     }
     }
     }
+
 
 class Atleta{
     constructor(nombre,rmSnatch,rmClean,rmCleanAndJerk){
