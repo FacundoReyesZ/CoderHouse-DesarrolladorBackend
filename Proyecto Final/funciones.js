@@ -1,5 +1,7 @@
-function direccionar(){
+function almacenar(){
     let nombreAtleta = document.getElementById("nombreAtleta").value;
+}
+function direccionar(){
         location.href="index.html"
     }
 
@@ -65,11 +67,3 @@ function registroDeRm(){
     }
 
 
-class Atleta{
-    constructor(nombre,rmSnatch,rmClean,rmCleanAndJerk){
-        this.nombre=nombre;
-        this.rmSnatch=rmSnatch;
-        this.rmCleanAndJerk=rmCleanAndJerk;
-        this.rmClean=rmClean;
-    }
-}

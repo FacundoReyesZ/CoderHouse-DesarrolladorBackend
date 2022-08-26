@@ -45,7 +45,7 @@
         </form>
     </div>
     <div class="container-form sign-in">
-        <form class="formulario">
+        <form id="formulario-atleta" class="formulario">
             <h2 class="create-account">Iniciar Sesión</h2>
             <div class="iconos">
                 <div class="border-icon">
@@ -59,8 +59,8 @@
                 </div>
             </div>
             <p class="cuenta-gratis">¿Aun no tienes una cuenta?</p>
-            <input id="nombreAtleta" type="nombre" placeholder="Nombre del Atleta">
-            <input type="password" placeholder="Contraseña">
+            <input id="nombreAtleta" onclick="almacenar()" type="nombre" placeholder="Nombre del Atleta">
+<!--             <input type="password" placeholder="Contraseña"> -->
             <input id="login" type="button" value="Iniciar Sesión">
         </form>
         <div class="welcome-back">

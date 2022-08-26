@@ -1,4 +1,19 @@
-let atletas = [{}]
+class Atleta{
+    constructor(nombre,rmSnatch,rmClean,rmCleanAndJerk){
+        this.nombre=nombre;
+        this.rmSnatch=rmSnatch;
+        this.rmCleanAndJerk=rmCleanAndJerk;
+        this.rmClean=rmClean;
+    }
+}
+
+let atletas = [{
+    nombre:"facundo",
+    rmSnatch:100,
+    rmClean:120,
+    rmCleanAndJerk:110
+}]
+localStorage.setItem("lista",JSON.stringify(atletas))
 let snatch = []
 let cleanAndJerk = []
 let clean =[]
@@ -6,7 +21,6 @@ let usuarioNuevo=true
 let bienvenida = document.getElementById("bienvenida");
 let calculadora = document.getElementById("calculadora")
 let repMax=document.getElementById("repMax")
-let nombreAtleta = document.getElementById("nombreAtleta");
 const $btnSignIn= document.querySelector('.sign-in-btn'),
       $btnSignUp = document.querySelector('.sign-up-btn'),  
       $signUp = document.querySelector('.sign-up'),
@@ -29,7 +43,7 @@ if(primerRegistro===true){
     atletas.push(new Atleta(nombreAtleta,prompt(`coloque su rm de snatch`),prompt(`coloque su rm de clean`),prompt(`coloque su rm de clean and jerk`)))
 }
  */
-bienvenida.innerText = `Hola ${nombreAtleta} ,Bienvenida a tu app para atletas`
+/* bienvenida.innerText = `Hola ${nombreAtleta} ,Bienvenida a tu app para atletas` */
 
 calculadora.addEventListener("click",fcalculadora)    
 
