@@ -16,11 +16,7 @@ const   $btnSignIn= document.querySelector('.sign-in-btn'),
                 location.href="index.html"
         }
 
-
-
-
 /* EVENTOS */
-
 
         document.addEventListener('click', e => {
             if (e.target === $btnSignIn || e.target === $btnSignUp) {

@@ -13,30 +13,27 @@
     let bienvenida = document.getElementById("bienvenida");
     let calculadora = document.getElementById("calculadora")
     let repMax=document.getElementById("repMax")
-    
 
 /* FUNCIONES */
-
-   async function swal_1(){
-const ipAPI = '//api.ipify.org?format=json'
-
-const inputValue = fetch(ipAPI)
-  .then(response => response.json())
-  .then(data => data.ip)
-
-const { value: rm } = await Swal.fire({
+    
+    async function swal_1(){
+    const { value } = await Swal.fire({
   title: 'Ingresa tu RM para darte los porcentajes',
   input: 'number',
   inputLabel: '1 Repeticion maxima',
-  inputValue: inputValue,
   showCancelButton: true,
   inputValidator: (value) => {
     if (!value) {
       return 'Necesitas escribir una cantidad'
     }
-  }
-})
     }
+    })
+    if(value){
+    porcentajes(value)
+    }
+    }
+
+
     class Atleta{
     constructor(nombre,rmSnatch,rmClean,rmCleanAndJerk){
         this.nombre=nombre;
@@ -46,9 +43,10 @@ const { value: rm } = await Swal.fire({
     }
 }
 
-    function porcentajes(rm){
-    for(let i=4;i<10;i+=0.5){
+function porcentajes(rm){
         const lista=document.getElementById("lista")
+        lista.innerHTML=""
+    for(let i=4;i<10;i+=0.5){
         const li=document.createElement("li")
               li.innerText=`Este es tu ${i*10}%: ${Math.round( rm * (0.10*i))}`
               lista.append(li)
@@ -58,8 +56,6 @@ const { value: rm } = await Swal.fire({
 
     function fcalculadora(){
     swal_1()
-    /* let rm = prompt(`Hola ${localStorage.nombreAtleta} , porfavor indicame tu repeticion maxima para darte los porcentajes en kilogramos.`) */
-    porcentajes(rm)
 }
 
     function ingresarRm(){
