@@ -13,9 +13,30 @@
     let bienvenida = document.getElementById("bienvenida");
     let calculadora = document.getElementById("calculadora")
     let repMax=document.getElementById("repMax")
+    
 
 /* FUNCIONES */
 
+   async function swal_1(){
+const ipAPI = '//api.ipify.org?format=json'
+
+const inputValue = fetch(ipAPI)
+  .then(response => response.json())
+  .then(data => data.ip)
+
+const { value: rm } = await Swal.fire({
+  title: 'Ingresa tu RM para darte los porcentajes',
+  input: 'number',
+  inputLabel: '1 Repeticion maxima',
+  inputValue: inputValue,
+  showCancelButton: true,
+  inputValidator: (value) => {
+    if (!value) {
+      return 'Necesitas escribir una cantidad'
+    }
+  }
+})
+    }
     class Atleta{
     constructor(nombre,rmSnatch,rmClean,rmCleanAndJerk){
         this.nombre=nombre;
@@ -36,7 +57,8 @@
 }
 
     function fcalculadora(){
-    let rm = prompt(`Hola ${localStorage.nombreAtleta} , porfavor indicame tu repeticion maxima para darte los porcentajes en kilogramos.`)
+    swal_1()
+    /* let rm = prompt(`Hola ${localStorage.nombreAtleta} , porfavor indicame tu repeticion maxima para darte los porcentajes en kilogramos.`) */
     porcentajes(rm)
 }
 
@@ -44,7 +66,7 @@
     do{
     let ingresarMarca= confirm(`Tienes alguna nueva marca de repeticion maxima que quieras agregar a la tabla?`)
 
-if(ingresarMarca===true){
+    if(ingresarMarca===true){
 let movimiento=prompt(`¿Cual es el movimiento?`)
 let nuevaMarca=prompt(`Porfavor indica el peso en kilogramos de la nueva marca`)
 if(movimiento=="snatch"){
@@ -62,29 +84,10 @@ if(movimiento=="clean"){
 }
 
 
-usuarioNuevo=confirm(`¿Desea agregar otra marca?`)
+    usuarioNuevo=confirm(`¿Desea agregar otra marca?`)
     
-}while(usuarioNuevo===true)
+}   while(usuarioNuevo===true)
 }
-
-    function registroDeRm(){
-    if(ingresarMarca===true){
-        let movimiento=prompt(`¿Cual es el movimiento?`)
-        let nuevaMarca=prompt(`Porfavor indica el peso en kilogramos de la nueva marca`)
-        if(movimiento=="snatch"){
-            snatch.push({nombre:localStorage.nombreAtleta,marca:nuevaMarca});
-            console.table(snatch);
-        }
-        if(movimiento=="cleanAndJerk"){
-            cleanAndJerk.push({nombre:localStorage.nombreAtleta,marca:nuevaMarca});
-            console.table(cleanAndJerk);
-        }
-        if(movimiento=="clean"){
-            clean.push({nombre:localStorage.nombreAtleta,marca:nuevaMarca});
-            console.table(clean);
-    }
-    }
-    }
 
     /* EVENTOS */
     calculadora.addEventListener("click",fcalculadora)    

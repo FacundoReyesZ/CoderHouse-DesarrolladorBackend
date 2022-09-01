@@ -48,3 +48,10 @@ const titulo = document.getElementById("titulo")
 
 titulo.innerText "Devuelve en consola lo que esta escrito dentro del id titulo por ejemplo"
 */
+
+/* 
+CLASE 9 EVENTOS => 
+tag video y audio para usar en el proyecto final, mostrar ejercicios que tocan ese dia determinado de planificación
+
+minuto 1:27
+*/

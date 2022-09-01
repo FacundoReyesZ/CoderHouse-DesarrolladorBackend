@@ -39,7 +39,7 @@ body{
     justify-content: center;
     flex-direction: row;
     border-radius: 0 16px 16px 0;
-
+    
 }
 
 .list__item{
@@ -57,6 +57,6 @@ body{
     margin: 0 auto;
 }
 
-.pie{
-    
+#kilos{
+    width: auto;
 }
