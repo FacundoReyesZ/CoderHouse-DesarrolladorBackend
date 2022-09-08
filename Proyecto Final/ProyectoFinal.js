@@ -13,27 +13,87 @@
     let bienvenida = document.getElementById("bienvenida");
     let calculadora = document.getElementById("calculadora")
     let repMax=document.getElementById("repMax")
+    let benchmarks=document.getElementById("benchmarks")
 
 /* FUNCIONES */
-    
+    const cargarJson = async () =>{
+        await fetch("/ProyectoFinal/ProyectoFinal.json")
+              .then((Response)=>Response.json())
+              .then((data)=>console.table(data))
+    }
+
     async function swal_1(){
-    const { value } = await Swal.fire({
-  title: 'Ingresa tu RM para darte los porcentajes',
-  input: 'number',
-  inputLabel: '1 Repeticion maxima',
-  showCancelButton: true,
-  inputValidator: (value) => {
-    if (!value) {
-      return 'Necesitas escribir una cantidad'
-    }
-    }
-    })
-    if(value){
-    porcentajes(value)
-    }
+        const { value } = await Swal.fire({
+            title: 'Ingresa tu RM para darte los porcentajes',
+            input: 'number',
+            inputLabel: '1 Repeticion maxima',
+            showCancelButton: true,
+            inputValidator: (value) => {
+                if (!value) {
+                return 'Necesitas escribir una cantidad'
+                }
+            }
+        })
+                if(value){
+                porcentajes(value)
+                }
     }
 
+    async function swal_2() {
 
+        const { value: wod } = await Swal.fire({
+          title: 'Elige el Wod',
+          input: 'select',
+          inputOptions: {
+            'Heroes': {
+              fran: 'Fran',
+              murph: 'Murph',
+              dt: 'DT'
+            },
+            'Girls': {
+              grace: 'Grace',
+              isabel: 'Isabel',
+              karen: 'Karen'
+            },
+          },
+          inputPlaceholder: 'Select a Wod',
+          showCancelButton: true,
+          inputValidator: (value) => {
+            return new Promise((resolve) => {
+              if (value === 'fran') {
+                resolve(swal.fire({
+                    imageUrl:`https://anabelavila.com/wp-content/uploads/2022/01/wod-fran-crossfit.webp`
+                }))
+              } 
+              else if(value === 'murph') {
+                resolve(swal.fire({
+                    imageUrl:`https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/wod-murph-1580919968.png?resize=480:*`
+                }))
+              } 
+              else if (value === 'dt') {
+                resolve(swal.fire({
+                    imageUrl:`https://wodwell.com/wp-content/uploads/share_images/186/square-DT-th.jpg?v=2022-04-19-02-37`
+                }))
+              } 
+              else if (value === 'grace') {
+                resolve(swal.fire({
+                    imageUrl:`https://anabelavila.com/wp-content/uploads/2022/01/wod-crossfit-grace.webp`
+                }))
+              } 
+              else if (value === 'isabel') {
+                resolve(swal.fire({
+                    imageUrl:`https://anabelavila.com/wp-content/uploads/2020/01/wod-crossfit-isabel.webp`
+                }))
+              } 
+              else if(value === 'karen') {
+                resolve(swal.fire({
+                    imageUrl:`https://wodwell.com/wp-content/uploads/share_images/256/square-Screen-Shot-2020-03-03-at-9.28.59-AM.png?v=2021-12-05-19-35`
+                }))
+                                        } 
+                                    })}
+        })
+            }
+        
     class Atleta{
     constructor(nombre,rmSnatch,rmClean,rmCleanAndJerk){
         this.nombre=nombre;
@@ -43,14 +103,13 @@
     }
 }
 
-function porcentajes(rm){
+    function porcentajes(rm){
         const lista=document.getElementById("lista")
         lista.innerHTML=""
     for(let i=4;i<10;i+=0.5){
         const li=document.createElement("li")
               li.innerText=`Este es tu ${i*10}%: ${Math.round( rm * (0.10*i))}`
               lista.append(li)
-        /* console.log(`Este es tu ${i*10}%:`,Math.round( rm * (0.10*i))) */
     }
 }
 
@@ -89,6 +148,10 @@ if(movimiento=="clean"){
     calculadora.addEventListener("click",fcalculadora)    
     
     repMax.addEventListener("click",ingresarRm)
+
+    benchmarks.addEventListener("click",swal_2)
+
+
     
     
     
