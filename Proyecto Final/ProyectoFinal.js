@@ -16,11 +16,6 @@
     let benchmarks=document.getElementById("benchmarks")
 
 /* FUNCIONES */
-    const cargarJson = async () =>{
-        await fetch("/ProyectoFinal/ProyectoFinal.json")
-              .then((Response)=>Response.json())
-              .then((data)=>console.table(data))
-    }
 
     async function swal_1(){
         const { value } = await Swal.fire({
@@ -40,6 +35,10 @@
     }
 
     async function swal_2() {
+
+        fetch("./ProyectoFinal.json")
+              .then((Response)=>Response.json())
+              .then((data)=>data_json=data)
 
         const { value: wod } = await Swal.fire({
           title: 'Elige el Wod',
@@ -62,32 +61,32 @@
             return new Promise((resolve) => {
               if (value === 'fran') {
                 resolve(swal.fire({
-                    imageUrl:`https://anabelavila.com/wp-content/uploads/2022/01/wod-fran-crossfit.webp`
+                    imageUrl:data_json[0].imageUrl
                 }))
               } 
               else if(value === 'murph') {
                 resolve(swal.fire({
-                    imageUrl:`https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/wod-murph-1580919968.png?resize=480:*`
+                    imageUrl:data_json[1].imageUrl
                 }))
               } 
               else if (value === 'dt') {
                 resolve(swal.fire({
-                    imageUrl:`https://wodwell.com/wp-content/uploads/share_images/186/square-DT-th.jpg?v=2022-04-19-02-37`
+                    imageUrl:data_json[2].imageUrl
                 }))
               } 
               else if (value === 'grace') {
                 resolve(swal.fire({
-                    imageUrl:`https://anabelavila.com/wp-content/uploads/2022/01/wod-crossfit-grace.webp`
+                    imageUrl:data_json[3].imageUrl
                 }))
               } 
               else if (value === 'isabel') {
                 resolve(swal.fire({
-                    imageUrl:`https://anabelavila.com/wp-content/uploads/2020/01/wod-crossfit-isabel.webp`
+                    imageUrl:data_json[4].imageUrl
                 }))
               } 
               else if(value === 'karen') {
                 resolve(swal.fire({
-                    imageUrl:`https://wodwell.com/wp-content/uploads/share_images/256/square-Screen-Shot-2020-03-03-at-9.28.59-AM.png?v=2021-12-05-19-35`
+                    imageUrl:data_json[5].imageUrl
                 }))
                                         } 
                                     })}
