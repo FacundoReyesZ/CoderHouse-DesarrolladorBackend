@@ -15,6 +15,7 @@
     let calculadora = document.getElementById("calculadora")
     let repMax=document.getElementById("repMax")
     let benchmarks=document.getElementById("benchmarks")
+    let wod = document.getElementById("wod")
 
 /* FUNCIONES */
 
@@ -93,6 +94,12 @@
                                     })}
         })
             }
+
+           function swal_3(){
+            Swal.fire({
+                imageUrl:"https://i.pinimg.com/736x/90/95/bd/9095bd7b6316e43355d9ff13083bbb72.jpg"
+            })
+           }
         
     class Atleta{
     constructor(nombre,rmSnatch,rmClean,rmCleanAndJerk){
@@ -206,6 +213,8 @@ if(movimiento=="clean"){
     repMax.addEventListener("click",ingresarRm)
 
     benchmarks.addEventListener("click",swal_2)
+
+    wod.addEventListener("click",swal_3)
 
 
 
