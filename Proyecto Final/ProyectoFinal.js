@@ -9,8 +9,9 @@
     let snatch = []
     let cleanAndJerk = []
     let clean =[]
+    let nuevaMarca
     let usuarioNuevo=true
-    let bienvenida = document.getElementById("bienvenida");
+    let bienvenida = document.getElementById("bienvenida")
     let calculadora = document.getElementById("calculadora")
     let repMax=document.getElementById("repMax")
     let benchmarks=document.getElementById("benchmarks")
@@ -116,7 +117,62 @@
     swal_1()
 }
 
-    function ingresarRm(){
+function ingresarRm(){
+    Swal.fire({
+      title: 'Tienes alguna nueva marca de repeticion maxima que quieras agregar a la tabla?',
+      icon: 'question',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'si '
+    }).then((result) => {
+      if (result.isConfirmed) {
+          const { value: movimiento } =Swal.fire({
+              title: 'Elige el movimiento',
+              input: 'select',
+              inputOptions: {
+                
+                  snatch: 'Snatch',
+                  clean: 'Clean',
+                  cleanAndJerk: 'CleanAndJerk'
+                ,
+              },
+              inputPlaceholder: 'Selecciona el Levantamiento',
+              showCancelButton: true,
+              inputValidator: (value) => {
+                return new Promise((resolve) => {
+                  if (value === 'snatch') {
+                    nuevaMarca = Swal.fire({
+                        title: 'Porfavor indica el peso en kilogramos de la nueva marca',
+                        input: 'number',
+                      })
+                        snatch.push({nombre:localStorage.nombreAtleta,marca:nuevaMarca});
+                      
+                  } 
+                  else if(value === 'clean') {
+                    nuevaMarca = Swal.fire({
+                        title: 'Porfavor indica el peso en kilogramos de la nueva marca',
+                        input: 'number',
+                      })
+                      clean.push({nombre:localStorage.nombreAtleta,marca:nuevaMarca});
+                      
+                  } 
+                  else if (value === 'cleanAndJerk') {
+                    nuevaMarca = Swal.fire({
+                        title: 'Porfavor indica el peso en kilogramos de la nueva marca',
+                        input: 'number',
+                      })
+                      cleanAndJerk.push({nombre:localStorage.nombreAtleta,marca:nuevaMarca});
+                      
+                  } 
+                  
+                                        })}
+            })
+      }
+    })
+  }
+
+/*     function ingresarRm(){
     do{
     let ingresarMarca= confirm(`Tienes alguna nueva marca de repeticion maxima que quieras agregar a la tabla?`)
 
@@ -141,7 +197,8 @@ if(movimiento=="clean"){
     usuarioNuevo=confirm(`¿Desea agregar otra marca?`)
     
 }   while(usuarioNuevo===true)
-}
+} */
+
 
     /* EVENTOS */
     calculadora.addEventListener("click",fcalculadora)    
@@ -151,26 +208,10 @@ if(movimiento=="clean"){
     benchmarks.addEventListener("click",swal_2)
 
 
+
+
+
     
-    
-    
-    
-        
-    
-    /* 
-    let primerRegistro=confirm(`Hola ${nombreAtleta}, si es tu primer registro , necesito que cargues tus repeticiones maximas de Snatch , C&J y Squat Clean `)
-    if(primerRegistro===true){
-        atletas.push(new Atleta(nombreAtleta,prompt(`coloque su rm de snatch`),prompt(`coloque su rm de clean`),prompt(`coloque su rm de clean and jerk`)))
-    }
-     */
-    /* bienvenida.innerText = `Hola ${nombreAtleta} ,Bienvenida a tu app para atletas` */
-
-
-
-
-
-
-
 
 
 
